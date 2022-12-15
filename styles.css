@@ -32,14 +32,14 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 56vh;
+  height: 55vh;
   position: absolute;
   z-index: -999;
 }
 
 .img-logo {
+  width: 8em;
   padding-bottom: 3rem;
-  float: left;
 }
 
 .wrapper {
@@ -83,6 +83,10 @@ img {
   background-color: var(--soft-magenta);
 }
 
+i:hover {
+  color: var(--soft-magenta);
+}
+
 .social-icons {
   display: flex;
   align-items: center;
@@ -99,4 +103,44 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (width>=1080px) {
+  .background-img {
+    background-image: url(./images/bg-desktop.svg);
+    height: 100vh;
+  }
+
+  .wrapper {
+    padding: 2rem 5rem;
+    height: 100vh;
+  }
+
+  .img-logo {
+    padding-bottom: 3rem;
+  }
+
+  .hero {
+    display: flex;
+    padding-bottom: 0;
+    gap: 3rem;
+  }
+
+  .hero-img {
+    padding-bottom: 0;
+  }
+  .hero-text {
+    text-align: left;
+    padding-top: 3rem;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: end;
+  }
 }
